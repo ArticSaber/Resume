@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+body{
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
