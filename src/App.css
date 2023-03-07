@@ -1,4 +1,4 @@
-.maincontainer {
+.App {
   width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0);
@@ -7,48 +7,71 @@
   justify-content: center;
   align-items: center;
 }
+
 .container {
   width: 60vw;
   height: 90vh;
   color: black;
-  background-color: white;
+  background-color: rgb(196, 196, 196);
+  filter: drop-shadow(0px 4px 40px rgba(255, 255, 255, 0.393));
   user-select: none;
   transition: all, 1s;
   border-radius: 2rem;
   padding: 3rem;
   box-sizing: border-box;
 }
-.container:hover {
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+/* .container:hover {
   transform: scale(1.1);
   box-shadow: 0 0 5rem rgb(255, 255, 255);
-}
-.heading {
+} */
+
+.heading { 
   font-size: 2rem;
-  text-align: center;
+  align-items: center;
   padding: 1rem;
+}
+/* .image{
+  height: 10rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 0 -1rem;
+  border-radius: 20%;
+} */
+
+.head{
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
 }
 
 .contact {
-  display: flex;
+  display:flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .obj {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .box {
   display: flex;
 }
+
 .line {
   background-color: black;
-}
-.left {
-  width: 45%;
-}
-.right {
-  width: 55%;
 }
 
 .myobj {
@@ -61,4 +84,10 @@
   margin-left: 1rem;
   display: flex;
   gap: 1rem;
+ 
 }
+
+.skills{
+  gap: 1rem;
+}
+
