@@ -113,7 +113,7 @@ function App() {
                   <a
                     style={{ fontWeight: "bold" }}
                     id="a"
-                    href="https://https://ieeexplore.ieee.org/document/10028943"
+                    href="https://ieeexplore.ieee.org/document/10028943"
                   >
                     https://ieeexplore.ieee.org/document/10028943
                   </a>
