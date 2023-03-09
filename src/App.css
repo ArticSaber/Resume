@@ -48,7 +48,7 @@
 }
 
 #blur {
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   position: absolute;
   z-index: -3;
