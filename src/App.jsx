@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import { BsTelephone } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
+import { BsTelephone, BsInstagram } from "react-icons/bs";
+import { AiOutlineMail, AiFillInstagram } from "react-icons/ai";
 import { GrHomeRounded } from "react-icons/gr";
-import { TbPoint } from "react-icons/Tb";
+import { TbCircleDotted, TbBrandGithub, TbBold } from "react-icons/Tb";
+import { SlSocialLinkedin } from "react-icons/sl";
 import photo from "./assets/image.jpeg";
 
 function App() {
@@ -30,43 +31,52 @@ function App() {
             alt="image"
           className="image" /> */}
           <div className="head">
-            <span>KAARTHIKEYAN S</span>
-            <span>B.E (CSE)</span>
+            <span style={{ fontWeight: "bold" }}>KAARTHIKEYAN S</span>
+            <span style={{ fontWeight: "bold" }}>B.E (CSE)</span>
           </div>
         </div>
         <hr className="line" size="10" />
         <div className="box">
           <div className="left">
             <div className="contact">
-              CONTACT
+              <span style={{ fontWeight: "bold" }}>CONTACT</span>
               <div className="contact-item">
-                <BsTelephone className="icon" />
+                <BsTelephone />
                 8072920907
               </div>
               <div className="contact-item">
-                <AiOutlineMail className="icon" />
+                <AiOutlineMail />
                 kaarthiknirmala@gmail.com
               </div>
               <div className="contact-item">
-                <GrHomeRounded className="icon" /> No.114, Flat E, Chendur
-                Castle, Kattupakkam, Chennai – 600 056.
+                <GrHomeRounded /> No.114, Flat E, Chendur Castle, Kattupakkam,
+                Chennai – 600 056.
               </div>
             </div>
             <div className="skills">
-              TECHNICAL SKILLS
-              <ul>
-                <li>C</li>
+              <span style={{ fontWeight: "bold" }}>TECHNICAL SKILLS</span>
+              <ul className="table">
+                <li>C </li>
                 <li>Python</li>
                 <li>HTML</li>
-                <li>ReactJS</li>
                 <li>CSS</li>
+                <li>ReactJS</li>
               </ul>
+            </div>
+            <div>
+              <span style={{ fontWeight: "bold" }}>HOBBIES</span>
+              <div className="hobby-content">
+                <ul className="table">
+                  <li>Travelling</li>
+                  <li>Chess</li>
+                </ul>
+              </div>
             </div>
           </div>
 
           <div className="right">
             <div className="obj">
-              OBJECTIVE
+              <span style={{ fontWeight: "bold" }}>OBJECTIVE</span>
               <div className="myobj">
                 A motivated individual with in-depth knowledge of languages and
                 development tools, seeking a position in a growth-oriented
@@ -74,17 +84,58 @@ function App() {
                 company while having the scope to develop my own skills.
               </div>
             </div>
-            <div className="edu ">
-              EDUCATIONAL QUALIFICATIONS
+            <div className="edu">
+              <span style={{ fontWeight: "bold" }}>
+                EDUCATIONAL QUALIFICATIONS
+              </span>
               <div className="educont">
-                <TbPoint className="icon" /> 2020 - 2024
+                <TbCircleDotted size={20} /> 2020 - 2024 <br />
+                Saveetha Engineering College B.E (CSE) - III Year
               </div>
+              <div className="educont">
+                <TbCircleDotted size={20} /> 2020 <br />
+                The National IT International School XII std
+              </div>
+              <div className="educont">
+                <TbCircleDotted size={20} /> 2018 <br />
+                The National IT International School X Std
+              </div>
+            </div>
+            <div className="pp">
+              <span style={{ fontWeight: "bold" }}>PAPERS PUBLISHED</span>
+              <ul className="pp-cont table">
+                <li>
+                  Published a Research Paper titled “Improving the Performance
+                  of SoC’s with Ecosystem Based Artificial Intelligence and
+                  Enhanced Thermal and Power Management.”
+                  <br />
+                  <br />
+                  <a
+                    style={{ fontWeight: "bold" }}
+                    id="a"
+                    href="https://https://ieeexplore.ieee.org/document/10028943"
+                  >
+                    https://ieeexplore.ieee.org/document/10028943
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+        <div className="socials">
+          <a href="https://github.com/ArticSaber">
+            {/* <GoMarkGithub className="soc" size={35} /> */}
+            <TbBrandGithub className="soc" size={35} />
+          </a>
+          <a href="https://www.linkedin.com/in/kaarthik-s/">
+            <SlSocialLinkedin className="soc" size={35} />
+          </a>
+          <a href="https://www.instagram.com/the__epic__hero/">
+            <BsInstagram className="soc" size={35} />
+          </a>
+        </div>
       </div>
     </div>
-
   );
 }
 
