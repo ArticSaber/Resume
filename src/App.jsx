@@ -3,7 +3,7 @@ import "./App.css";
 import { BsTelephone, BsInstagram } from "react-icons/bs";
 import { AiOutlineMail, AiFillInstagram } from "react-icons/ai";
 import { GrHomeRounded } from "react-icons/gr";
-import { TbCircleDotted, TbBrandGithub, TbBold } from "react-icons/Tb";
+import { TbCircleDotted, TbBrandGithub } from "react-icons/tb";
 import { SlSocialLinkedin } from "react-icons/sl";
 import photo from "./assets/image.jpeg";
 
